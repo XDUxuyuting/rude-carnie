@@ -2,14 +2,14 @@ import numpy as np
 import cv2
 FACE_PAD = 50
 
-class ObjectDetector(object):
+class ObjectDetector(object):#目标识别
     def __init__(self):
         pass
 
     def run(self, image_file):
         pass
 
-# OpenCV's cascade object detector
+# OpenCV's cascade object detector 基于OPENCV的连续目标识别
 class ObjectDetectorCascadeOpenCV(ObjectDetector):
     def __init__(self, model_name, basename='frontal-face', tgtdir='.', min_height_dec=20, min_width_dec=20,
                  min_height_thresh=50, min_width_thresh=50):
